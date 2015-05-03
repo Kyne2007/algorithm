@@ -30,10 +30,11 @@ int main(int argc, char *argv[])
         }
 
         //test sort 
-        /* quick_sort(a, 0, n - 1); */
+        /* quick_sort(a, n); */
         /* heap_sort(a, n); */
         /* counting_sort(a, n, 500); */
-        radix_sort(a, n, 3);
+        /* radix_sort(a, n, 3); */
+        merge_sort(a, n);
 
         if (check(a, n)) {
             cout << "case#" << i << " success" << endl;

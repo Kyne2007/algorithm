@@ -26,3 +26,11 @@ void quick_sort(int a[], int f, int b)
     }
 }
 
+void quick_sort(int a[], int n)
+{
+    if (a == nullptr || n <= 0)
+        return ;
+
+    quick_sort(a, 0, n - 1);
+}
+
